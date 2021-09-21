@@ -232,11 +232,11 @@ exec --no-startup-id xautolock -time 5 -locker 'i3lock-fancy -p'
 exec --no-startup-id picom
 
 # Theme colors
-client.focused          #EAD49B #1E272B #EAD49B #9D6A47 #9D6A47
-client.focused_inactive #EAD49B #1E272B #EAD49B #78824B #78824B
-client.unfocused        #EAD49B #1E272B #EAD49B #78824B #78824B
-client.urgent           #EAD49B #1E272B #EAD49B #78824B #78824B
-client.placeholder      #EAD49B #1E272B #EAD49B #78824B #78824B
+client.focused          #EEEEEE #1E272B #EEEEEE #FFF #FFF
+client.focused_inactive #EEEEEE #1E272B #EEEEEE #78824B #78824B
+client.unfocused        #EEEEEE #1E272B #EEEEEE #78824B #78824B
+client.urgent           #EEEEEE #1E272B #EEEEEE #78824B #78824B
+client.placeholder      #EEEEEE #1E272B #EEEEEE #78824B #78824B
 
 client.background       #1E272B
 
