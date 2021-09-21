@@ -1,6 +1,4 @@
 #!/bin/sh
-
-printDunstRc(){
 cat << EOF
 [global]
 font = Fira Code 12
@@ -59,4 +57,3 @@ foreground = "#B7472A"
 background = "#191311"
 timeout = 8
 EOF
-}

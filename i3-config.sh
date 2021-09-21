@@ -1,6 +1,4 @@
 #!/bin/sh
-
-printFile(){
 mod='$mod'
 ws1='$ws1'
 ws2='$ws2'
@@ -12,7 +10,7 @@ ws7='$ws7'
 ws8='$ws8'
 mode_system='$mode_system'
 HOME='$HOME'
-    cat << EOF
+cat << EOF
 set $mod Mod4
 
 new_window pixel 0
@@ -297,4 +295,3 @@ mode "$mode_gaps_outer" {
        bindsym Escape mode "default"
 }
 EOF
-}
