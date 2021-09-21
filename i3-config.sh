@@ -9,6 +9,9 @@ ws6='$ws6'
 ws7='$ws7'
 ws8='$ws8'
 mode_system='$mode_system'
+mode_gaps='$mode_gaps'
+mode_gaps_inner='$mode_gaps_inner'
+mode_gaps_outer='$mode_gaps_outer'
 HOME='$HOME'
 cat << EOF
 set $mod Mod4
