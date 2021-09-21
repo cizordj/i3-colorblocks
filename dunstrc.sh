@@ -1,0 +1,62 @@
+#!/bin/sh
+
+printDunstRc(){
+cat << EOF
+[global]
+font = Fira Code 12
+markup = yes
+plain_text = no
+format = "<b>%s</b>\n%b"
+sort = no
+indicate_hidden = yes
+alignment = center
+bounce_freq = 0
+show_age_threshold = -1
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = yes
+hide_duplicates_count = yes
+geometry = "300x50-15+49"
+shrink = no
+transparency = 5
+idle_threshold = 0
+monitor = 0
+follow = none
+sticky_history = yes
+history_length = 15
+show_indicators = no
+line_height = 3
+separator_height = 2
+padding = 6
+horizontal_padding = 6
+separator_color = frame
+startup_notification = false
+dmenu = /usr/bin/dmenu -p dunst:
+browser = xdg-open
+icon_position = off
+max_icon_size = 80
+icon_path = /usr/share/icons/Paper/16x16/mimetypes/:/usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/emblems/
+frame_width = 3
+frame_color = "#8EC07C"
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+grave
+context = ctrl+shift+period
+[urgency_low]
+frame_color = "#3B7C87"
+foreground = "#3B7C87"
+background = "#191311"
+timeout = 4
+[urgency_normal]
+frame_color = "#d99f57"
+foreground = "#d99f57"
+background = "#1E272B"
+timeout = 6
+[urgency_critical]
+frame_color = "#B7472A"
+foreground = "#B7472A"
+background = "#191311"
+timeout = 8
+EOF
+}
