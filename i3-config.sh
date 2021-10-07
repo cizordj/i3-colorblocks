@@ -241,10 +241,11 @@ client.placeholder      #EEEEEE #1E272B #EEEEEE #78824B #78824B
 client.background       #1E272B
 
 # set power-manager and volume control
-
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute && notify-send "Vol++"
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute && notify-send "Vol--"
+bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle && notify-send Muted
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10% && notify-send "+10%"
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- && notify-send "10%-"
 
 # touchpad on and off controller on laptop with Fn+<touchpad control functional key>
 bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
@@ -256,8 +257,8 @@ focus_follows_mouse yes
 bindsym Print exec flameshot gui
 bindsym Shift+Print exec flameshot gui
 bindsym $mod+F1 exec --no-startup-id i3-sensible-terminal -e alsamixer
-bindsym $mod+F2 exec --no-startup-id sensible-browser
-bindsym $mod+F3 exec --no-startup-id i3-sensible-terminal -e vifm
+bindsym $mod+F2 exec --no-startup-id surf
+bindsym $mod+F3 exec --no-startup-id i3-sensible-terminal -e ranger
 bindsym $mod+F4 exec --no-startup-id xcalc
 bindsym $mod+F5 exec --no-startup-id i3-sensible-terminal -e cmus
 
