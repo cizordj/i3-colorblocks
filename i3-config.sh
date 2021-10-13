@@ -149,6 +149,7 @@ for_window [title="File Transfer*"] floating enable
 for_window [class="eog"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
+for_window [class="kitty"] floating enable resize set 1200 700
 for_window [class="(?i)gnome-calculator"] floating enable
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
@@ -227,6 +228,7 @@ mode "resize" {
 exec_always --no-startup-id xwallpaper --daemon --zoom $HOME/.config/xwallpaper/default.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
+exec_always --no-startup-id $HOME/.screenlayout/direita.sh
 exec xset r rate 200 40
 exec --no-startup-id xautolock -time 5 -locker 'i3lock-fancy -p'
 exec --no-startup-id picom
