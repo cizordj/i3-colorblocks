@@ -100,6 +100,9 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
+# shows the dmenu password store
+bindsym $mod+g exec --no-startup-id dmenu-passwords.sh
+
 # workspaces
 set $ws1 1
 set $ws2 2
