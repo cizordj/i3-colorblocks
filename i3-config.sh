@@ -193,7 +193,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3lock-fancy -p, mode "default"
+    bindsym l exec --no-startup-id i3lock-fancy -p, mode "default", exec xset dpms force off
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
     bindsym r exec --no-startup-id doas /sbin/reboot, mode "default"
     bindsym Shift+s exec --no-startup-id doas /sbin/poweroff, mode "default"
@@ -233,7 +233,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id $HOME/.screenlayout/direita.sh
 exec xset r rate 200 40
-exec --no-startup-id xautolock -time 5 -locker 'i3lock-fancy -p'
+exec --no-startup-id xautolock -time 5 -locker 'i3lock-fancy -p ; xset dpms force off'
 exec --no-startup-id picom
 
 # Theme colors
