@@ -232,7 +232,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id $HOME/.screenlayout/direita.sh
 exec xset r rate 200 40
-exec --no-startup-id xautolock -time 5 -locker 'i3lock-fancy -p ; xset dpms force off'
 exec --no-startup-id picom
 
 # Theme colors
