@@ -22,6 +22,7 @@ bindsym \$mod+Shift+q kill
 
 # start program launcher
 bindsym \$mod+d exec --no-startup-id sh \$HOME/.config/polybar/scripts/launcher.sh
+bindsym \$mod+c exec --no-startup-id sh \$HOME/.config/polybar/scripts/run.sh
 
 # change focus
 bindsym \$mod+j focus left
