@@ -156,6 +156,7 @@ for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [title="QEMU"] floating enable
 for_window [class="Simple-scan"] floating enable border normal
+for_window [class="st-256color"] floating enable border pixel 1
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="Thus"] floating enable border normal
