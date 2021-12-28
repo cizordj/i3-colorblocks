@@ -7,7 +7,6 @@ DUNSTRC_PATH="$HOME/.config/dunst"
 DUNST_CONFIG_FILE="$DUNSTRC_PATH/dunstrc"
 XWALLPAPER_PATH="$HOME/.config/xwallpaper"
 LOCAL_BIN_DIR="$HOME/.local/bin"
-DMENU_PASSWORDS_FILE="$HOME/.local/bin/dmenu-passwords.sh"
 [ -d $CONFIG_PATH ] || mkdir $CONFIG_PATH
 sh "i3-config.sh" > "$CONFIG_FILE"
 [ -d $POLYBAR_PATH ] || mkdir $POLYBAR_PATH
@@ -27,7 +26,5 @@ sh "dunstrc.sh" > $DUNST_CONFIG_FILE
 [ -d $XWALLPAPER_PATH ] || mkdir "$XWALLPAPER_PATH"
 
 [ -d $LOCAL_BIN_DIR ] || mkdir "$LOCAL_BIN_DIR"
-
-[ -e $DMENU_PASSWORDS_FILE ] || cp "$(basename $DMENU_PASSWORDS_FILE)" "$DMENU_PASSWORDS_FILE"
 
 i3-msg restart
