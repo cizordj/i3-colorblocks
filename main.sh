@@ -1,7 +1,7 @@
 #!/bin/sh
 CONFIG_PATH="$HOME/.config/i3"
 CONFIG_FILE="$CONFIG_PATH/config"
-COLORBLOCKS_URL="git@github.com:cizordj/colorblocks.git"
+COLORBLOCKS_URL="git@github.com:/cizordj/colorblocks"
 POLYBAR_PATH="$HOME/.config/polybar"
 DUNSTRC_PATH="$HOME/.config/dunst"
 DUNST_CONFIG_FILE="$DUNSTRC_PATH/dunstrc"
@@ -12,8 +12,8 @@ sh "i3-config.sh" > "$CONFIG_FILE"
 [ -d $POLYBAR_PATH ] || mkdir $POLYBAR_PATH
 cd "$POLYBAR_PATH"
 [ -d "$POLYBAR_PATH/.git" ] && {
-    IT_IS_GIT_REPOSITORY=$(git remote -v | head -n1 | tr -d '\t' | sed -e 's/origin//g' -e 's/[[:space:]](fetch)//g')
-    [ $IT_IS_GIT_REPOSITORY != $COLORBLOCKS_URL ] && {
+    GIT_REMOTE_URL=$(git remote -v | head -n1 | tr -d '\t' | sed -e 's/origin//g' -e 's/[[:space:]](fetch)//g')
+    [ $GIT_REMOTE_URL != $COLORBLOCKS_URL ] && {
         rm -rf *
     }
 }
