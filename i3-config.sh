@@ -182,8 +182,8 @@ set \$mode_system (l)ock, (e)xit, (r)eboot, (Shift+s)hutdown
 mode "\$mode_system" {
     bindsym l exec --no-startup-id slock, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym r exec --no-startup-id doas /sbin/reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id doas /sbin/poweroff, mode "default"
+    bindsym r exec --no-startup-id loginctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id loginctl poweroff, mode "default"
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
