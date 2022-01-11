@@ -5,9 +5,9 @@ colorblocks theme
 
 Dependencies on Debian Sid:
 
-dunst i3 i3lock-fancy polybar xwallpaper fonts-font-awesome xdg-utils
+dunst i3 polybar xwallpaper fonts-font-awesome xdg-utils
 sensible-utils alsa-utils fonts-firacode flameshot xautolock
-numlockx
+numlockx suckless-tools
 
 It is recommended to use i3-gaps instead of the normal one because this shell
 script contains configuration related to gaps

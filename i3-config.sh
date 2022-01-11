@@ -180,7 +180,7 @@ bindsym \$mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortc
 bindsym \$mod+0 mode "\$mode_system"
 set \$mode_system (l)ock, (e)xit, (r)eboot, (Shift+s)hutdown
 mode "\$mode_system" {
-    bindsym l exec --no-startup-id i3lock-fancy -p, mode "default"
+    bindsym l exec --no-startup-id slock, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
     bindsym r exec --no-startup-id doas /sbin/reboot, mode "default"
     bindsym Shift+s exec --no-startup-id doas /sbin/poweroff, mode "default"
