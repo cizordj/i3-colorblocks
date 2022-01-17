@@ -9,5 +9,10 @@ dunst i3 polybar xwallpaper fonts-font-awesome xdg-utils
 sensible-utils alsa-utils fonts-firacode flameshot xautolock
 numlockx suckless-tools
 
-It is recommended to use i3-gaps instead of the normal one because this shell
-script contains configuration related to gaps
+Optional dependencies:
+
+surf, nautilus, xcalc, brightnessctl, picom
+
+Other dependencies:
+
+passmenu (which is not found in Debian)
