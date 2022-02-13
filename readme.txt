@@ -14,3 +14,7 @@ brightnessctl, picom
 Other dependencies:
 
 passmenu (which is not on Debian's repos)
+
+Dependencies on FreeBSD:
+
+mixertui

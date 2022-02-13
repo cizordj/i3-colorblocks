@@ -246,7 +246,7 @@ focus_follows_mouse yes
 # User defined keys
 bindsym Print exec flameshot gui
 bindsym Shift+Print exec flameshot gui
-bindsym \$mod+F1 exec --no-startup-id i3-sensible-terminal -e alsamixer
+bindsym \$mod+F1 exec --no-startup-id i3-sensible-terminal -e alsamixer || i3-sensible-terminal -e mixertui
 bindsym \$mod+F2 exec --no-startup-id surf
 bindsym \$mod+F3 exec --no-startup-id nautilus
 bindsym \$mod+F4 exec --no-startup-id xcalc
