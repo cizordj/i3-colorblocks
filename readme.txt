@@ -5,14 +5,12 @@ colorblocks theme
 
 Dependencies on Debian Sid:
 
-dunst i3 polybar xwallpaper fonts-font-awesome xdg-utils
-sensible-utils alsa-utils fonts-firacode flameshot xautolock
-numlockx suckless-tools
+dunst i3 polybar xdg-utils nautilus cmus alsa-utils flameshot xcalc numlockx suckless-tools
 
 Optional dependencies:
 
-surf, nautilus, xcalc, brightnessctl, picom
+brightnessctl, picom
 
 Other dependencies:
 
-passmenu (which is not found in Debian)
+passmenu (which is not on Debian's repos)
