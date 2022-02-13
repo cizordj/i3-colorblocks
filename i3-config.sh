@@ -215,12 +215,11 @@ mode "resize" {
 }
 
 # Autostart applications
-exec_always --no-startup-id xwallpaper --daemon --zoom \$HOME/.config/xwallpaper/default.png
+exec_always --no-startup-id \$HOME/.screenlayout/direita.sh
+exec --no-startup-id picom --experimental-backends
 exec_always --no-startup-id \$HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id \$HOME/.screenlayout/direita.sh
 exec xset r rate 200 40
-exec --no-startup-id picom
 
 # Theme colors
 client.focused          #EEEEEE #1E272B #EEEEEE #FFF #FFF
