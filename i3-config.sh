@@ -215,7 +215,6 @@ mode "resize" {
 }
 
 # Autostart applications
-exec_always --no-startup-id \$HOME/.screenlayout/direita.sh
 exec --no-startup-id picom --experimental-backends
 exec_always --no-startup-id \$HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
