@@ -163,6 +163,7 @@ for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)xcalc"] floating enable
 for_window [class="Xfburn"] floating enable
+for_window [window_role="toolbox"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
