@@ -219,7 +219,7 @@ mode "resize" {
 exec --no-startup-id picom --experimental-backends
 exec_always --no-startup-id \$HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
-exec xset r rate 200 40
+exec --no-startup-id xset r rate 200 40
 
 # Theme colors
 client.focused          #EEEEEE #1E272B #EEEEEE #FFF #FFF
