@@ -21,8 +21,8 @@ bindsym \$mod+Return exec i3-sensible-terminal
 bindsym \$mod+Shift+q kill
 
 # start program launcher
-bindsym \$mod+d exec --no-startup-id sh \$HOME/.config/polybar/scripts/launcher.sh
-bindsym \$mod+c exec --no-startup-id sh \$HOME/.config/polybar/scripts/run.sh
+bindsym \$mod+d exec --no-startup-id colorblocks --launcher
+bindsym \$mod+c exec --no-startup-id colorblocks --run
 
 # change focus
 bindsym \$mod+j focus left
@@ -217,7 +217,7 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id picom --experimental-backends
-exec_always --no-startup-id \$HOME/.config/polybar/launch.sh
+exec_always --no-startup-id colorblocks
 exec_always --no-startup-id numlockx on
 exec --no-startup-id xset r rate 200 40
 
