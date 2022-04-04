@@ -141,6 +141,7 @@ for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [class="(?i)gnome-calculator"] floating enable
 for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [class="kitty"] floating enable
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
