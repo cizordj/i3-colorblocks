@@ -3,12 +3,12 @@ cat << EOF
 set \$mod Mod4
 
 new_window pixel 0
-new_float pixel 1
+new_float pixel 3
 
 hide_edge_borders both
 
 bindsym \$mod+u border none
-bindsym \$mod+y border pixel 1
+bindsym \$mod+y border pixel 3
 bindsym \$mod+n border normal
 
 font xft:Fira Code 11
@@ -132,21 +132,21 @@ bindsym \$mod+Shift+8 move container to workspace \$ws8; workspace \$ws8
 
 # Open specific applications in floating mode
 for_window [window_role="About"] floating enable
-for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="alsamixer"] floating enable border pixel 3
 for_window [class="Calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="eog"] floating enable
-for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="Galculator"] floating enable border pixel 3
 for_window [class="GParted"] floating enable border normal
 for_window [class="(?i)gnome-calculator"] floating enable
 for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="kitty"] floating enable
+for_window [class="kitty"] floating enable border pixel 3
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
 for_window [class="Manjaro Settings Manager"] floating enable border normal
-for_window [title="mixertui"] floating enable border pixel 1
+for_window [title="mixertui"] floating enable border pixel 3
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
@@ -157,7 +157,7 @@ for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [title="QEMU"] floating enable
 for_window [class="Simple-scan"] floating enable border normal
-for_window [class="st-256color"] floating enable border pixel 1
+for_window [class="st-256color"] floating enable border pixel 3
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="Thus"] floating enable border normal
@@ -223,13 +223,14 @@ exec_always --no-startup-id numlockx on
 exec --no-startup-id xset r rate 200 40
 
 # Theme colors
-client.focused          #EEEEEE #1E272B #EEEEEE #FFF #FFF
-client.focused_inactive #EEEEEE #1E272B #EEEEEE #78824B #78824B
-client.unfocused        #EEEEEE #1E272B #EEEEEE #78824B #78824B
-client.urgent           #EEEEEE #1E272B #EEEEEE #78824B #78824B
-client.placeholder      #EEEEEE #1E272B #EEEEEE #78824B #78824B
+# colorclass             border  background  text     indicator child_border
+client.focused           #FFFFFF #311B92     #FFFFFF  #FFFFFF   #FFFFFF
+client.focused_inactive  #FFFFFF #311B92     #FFFFFF  #78824    #78824B
+client.unfocused         #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
+client.urgent            #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
+client.placeholder       #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
 
-client.background       #1E272B
+client.background       #000000
 
 # set power-manager and volume control
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute && notify-send "Vol++"
