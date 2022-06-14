@@ -47,9 +47,9 @@ foreground = "#3B7C87"
 background = "#191311"
 timeout = 4
 [urgency_normal]
-frame_color = "#eee"
-foreground = "#eee"
-background = "#1E272B"
+frame_color = "#FFFFFF"
+foreground = "#FFFFFF"
+background = "#000000"
 timeout = 6
 [urgency_critical]
 frame_color = "#B7472A"
