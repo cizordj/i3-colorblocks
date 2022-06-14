@@ -4,6 +4,7 @@ CONFIG_FILE="$CONFIG_PATH/config"
 COLORBLOCKS_URL="git@github.com:/cizordj/colorblocks"
 POLYBAR_PATH="$HOME/.config/polybar"
 DUNSTRC_PATH="$HOME/.config/dunst"
+GTK_CONFIG_PATH="$HOME/.config/gtk-3.0"
 DUNST_CONFIG_FILE="$DUNSTRC_PATH/dunstrc"
 LOCAL_BIN_DIR="$HOME/.local/bin"
 
@@ -12,6 +13,7 @@ createDirectories() {
     [ -d "$POLYBAR_PATH" ] || mkdir "$POLYBAR_PATH"
     [ -d "$DUNSTRC_PATH" ] || mkdir "$DUNSTRC_PATH"
     [ -d "$LOCAL_BIN_DIR" ] || mkdir "$LOCAL_BIN_DIR"
+    [ -d "$GTK_CONFIG_PATH" ] || mkdir "$GTK_CONFIG_PATH"
 }
 
 installPolybarTheme() {
@@ -43,5 +45,6 @@ cd "$OLDPWD"
 
 sh "dunstrc.sh" > "$DUNST_CONFIG_FILE"
 sh "i3-config.sh" > "$CONFIG_FILE"
+[ -e "$GTK_CONFIG_PATH/gtk.css" ] || cp gtk.css "$GTK_CONFIG_PATH"
 
 i3-msg restart
