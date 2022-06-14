@@ -242,6 +242,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- && not
 # touchpad on and off controller on laptop with Fn+<touchpad control functional key>
 bindsym XF86TouchpadOn exec --no-startup-id synclient Touchpadoff=0
 bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
+bindsym XF86Calculator exec --no-startup-id xcalc || gnome-calculator
 
 focus_follows_mouse yes
 
@@ -251,7 +252,7 @@ bindsym Shift+Print exec flameshot gui
 bindsym \$mod+F1 exec --no-startup-id i3-sensible-terminal -e alsamixer || i3-sensible-terminal -e mixertui
 bindsym \$mod+F2 exec --no-startup-id surf
 bindsym \$mod+F3 exec --no-startup-id nautilus
-bindsym \$mod+F4 exec --no-startup-id xcalc
+bindsym \$mod+F4 exec --no-startup-id xcalc || gnome-calculator
 bindsym \$mod+F5 exec --no-startup-id i3-sensible-terminal -e cmus
 bindsym \$mod+F6 exec --no-startup-id i3-sensible-terminal -e nmtui
 
