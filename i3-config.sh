@@ -132,6 +132,7 @@ bindsym \$mod+Shift+8 move container to workspace \$ws8; workspace \$ws8
 
 # Open specific applications in floating mode
 for_window [window_role="About"] floating enable
+for_window [class="Alacritty"] floating enable border pixel 3
 for_window [title="alsamixer"] floating enable border pixel 3
 for_window [class="Calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
