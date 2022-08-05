@@ -137,6 +137,7 @@ for_window [title="alsamixer"] floating enable border pixel 3
 for_window [class="Calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
+for_window [class="ffplay"] floating enable border pixel 3
 for_window [class="eog"] floating enable
 for_window [class="Galculator"] floating enable border pixel 3
 for_window [class="GParted"] floating enable border normal
@@ -227,7 +228,7 @@ exec --no-startup-id xset r rate 200 40
 # Theme colors
 # colorclass             border  background  text     indicator child_border
 client.focused           #FFFFFF #311B92     #FFFFFF  #FFFFFF   #FFFFFF
-client.focused_inactive  #FFFFFF #311B92     #FFFFFF  #78824    #78824B
+client.focused_inactive  #FFFFFF #311B92     #FFFFFF  #78824    #FFFFFF
 client.unfocused         #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
 client.urgent            #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
 client.placeholder       #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
