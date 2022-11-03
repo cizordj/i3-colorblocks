@@ -25,10 +25,10 @@ bindsym \$mod+d exec --no-startup-id colorblocks --launcher
 bindsym \$mod+c exec --no-startup-id colorblocks --run
 
 # change focus
-bindsym \$mod+j focus left
-bindsym \$mod+k focus down
-bindsym \$mod+l focus up
-bindsym \$mod+semicolon focus right
+bindsym \$mod+h focus left
+bindsym \$mod+j focus down
+bindsym \$mod+k focus up
+bindsym \$mod+l focus right
 
 bindsym \$mod+Left focus left
 bindsym \$mod+Down focus down
@@ -52,7 +52,7 @@ bindsym \$mod+b workspace back_and_forth
 bindsym \$mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym \$mod+h split h;exec notify-send 'Horizontal'
+bindsym \$mod+Shift+h split h;exec notify-send 'Horizontal'
 bindsym \$mod+v split v;exec notify-send 'Vertical'
 bindsym \$mod+q split toggle
 
