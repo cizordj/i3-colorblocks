@@ -151,6 +151,7 @@ for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [title="mixertui"] floating enable border pixel 3
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="neovide"] border pixel 3
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [class="Pamac-manager"] floating enable
