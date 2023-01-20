@@ -228,10 +228,10 @@ exec --no-startup-id xset r rate 200 40
 # Theme colors
 # colorclass             border  background  text     indicator child_border
 client.focused           #FFFFFF #311B92     #FFFFFF  #FFFFFF   #FFFFFF
-client.focused_inactive  #FFFFFF #311B92     #FFFFFF  #78824    #FFFFFF
-client.unfocused         #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
-client.urgent            #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
-client.placeholder       #FFFFFF #311B92     #FFFFFF  #78824B   #78824B
+client.focused_inactive  #FFFFFF #311B92     #FFFFFF  #797979    #FFFFFF
+client.unfocused         #FFFFFF #311B92     #FFFFFF  #797979B   #797979B
+client.urgent            #FFFFFF #311B92     #FFFFFF  #797979B   #797979B
+client.placeholder       #FFFFFF #311B92     #FFFFFF  #797979B   #797979B
 
 client.background       #000000
 
