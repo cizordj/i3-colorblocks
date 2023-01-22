@@ -263,7 +263,7 @@ bindsym \$mod+F6 exec --no-startup-id i3-sensible-terminal -e nmtui
 # Gaps
 gaps inner 10
 gaps outer -4
-#smart_gaps on
+smart_gaps on
 # Press \$mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set \$mode_gaps Gaps: (o) outer, (i) inner
 set \$mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
