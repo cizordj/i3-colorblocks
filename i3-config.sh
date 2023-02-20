@@ -135,6 +135,7 @@ for_window [window_role="About"] floating enable
 for_window [class="Alacritty"] floating enable border pixel 3
 for_window [title="alsamixer"] floating enable border pixel 3
 for_window [class="Calamares"] floating enable border normal
+for_window [class="chromium-browser"] floating disable border none
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="ffplay"] floating enable border pixel 3
