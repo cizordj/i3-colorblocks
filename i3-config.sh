@@ -89,6 +89,7 @@ bindsym \$mod+Ctrl+Left workspace prev
 
 # shows the dmenu password store
 bindsym \$mod+g exec --no-startup-id passmenu -l 10
+bindsym \$mod+t exec --no-startup-id passmenu --type -l 10
 
 # workspaces
 set \$ws1 1
