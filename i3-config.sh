@@ -223,10 +223,11 @@ mode "resize" {
 }
 
 # Autostart applications
-exec --no-startup-id picom --experimental-backends
+exec --no-startup-id picom
 exec_always --no-startup-id colorblocks
 exec_always --no-startup-id numlockx on
 exec --no-startup-id xset r rate 200 40
+exec --no-startup-id nitrogen --restore
 
 # Theme colors
 # colorclass             border  background  text     indicator child_border
